@@ -5,7 +5,7 @@ var pg = require('pg');
 var connectionString = require(path.join(__dirname, '../', '../', 'config'));
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.sendFile(path.join(__dirname, '../views', 'layout.html'));
 });
 
 // CREATE
